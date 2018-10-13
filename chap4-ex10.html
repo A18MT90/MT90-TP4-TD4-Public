@@ -121,15 +121,22 @@
             <section class="normal" id="section-">
 <div id="chap4-ex10" class="section level2">
 <h2><span class="header-section-number">1.5</span> Chap4 Ex10</h2>
-<!-- ```{block2, type='rmdexo'} -->
-<!-- 1. Soit $a$ un nombre réel,montrer que: -->
-<!-- $$a = 0 \iff (\forall \varepsilon > 0,\; \mid a\mid < \varepsilon)$$ -->
-<!-- 2. Montrer que  -->
-<!--     - si  -->
-<!--         - $f$ est une fonction périodique  -->
-<!--         - et $f$ admet une limite $l$ lorsque $x$ tend vers $+\infty$,  -->
-<!--     - alors $f$ est constante. -->
-<!-- ``` -->
+
+<div class="rmdexo">
+<ol style="list-style-type: decimal">
+<li>Soit <span class="math inline">\(a\)</span> un nombre réel,montrer que:
+<span class="math display">\[a = 0 \iff (\forall \varepsilon &gt; 0,\; | a| &lt; \varepsilon)\]</span></li>
+<li>Montrer que
+<ul>
+<li>si
+<ul>
+<li><span class="math inline">\(f\)</span> est une fonction périodique</li>
+<li>et <span class="math inline">\(f\)</span> admet une limite <span class="math inline">\(l\)</span> lorsque <span class="math inline">\(x\)</span> tend vers <span class="math inline">\(+\infty\)</span>,</li>
+</ul></li>
+<li>alors <span class="math inline">\(f\)</span> est constante.
+</div></li>
+</ul></li>
+</ol>
 <div id="guide-3" class="section level3 unnumbered">
 <h3>Guide</h3>
 <ul>
@@ -143,10 +150,10 @@
 <h3>Solution</h3>
 <div id="questions-1.-1" class="section level4 unnumbered">
 <h4>Questions 1.</h4>
-<p>“<span class="math inline">\(\implies\)</span>” : on a : <span class="math inline">\(\mid a\mid = 0 &lt; \varepsilon\)</span></p>
+<p>“<span class="math inline">\(\implies\)</span>” : on a : <span class="math inline">\(| a| = 0 &lt; \varepsilon\)</span></p>
 <p>“<span class="math inline">\(\impliedby\)</span>” : par contraposé, <span class="math inline">\((P \implies Q) \iff (\text{non}Q \implies \text{non}P)\)</span></p>
 <ul>
-<li><span class="math inline">\(a \neq 0 \implies \exists \varepsilon &gt; 0, \; \mid a \mid \geq \varepsilon\)</span>, il suffit de prendre <span class="math inline">\(\varepsilon = \mid a \mid\)</span>.</li>
+<li><span class="math inline">\(a \neq 0 \implies \exists \varepsilon &gt; 0, \; | a | \geq \varepsilon\)</span>, il suffit de prendre <span class="math inline">\(\varepsilon = | a |\)</span>.</li>
 </ul>
 <hr />
 </div>
@@ -156,7 +163,7 @@
 <li>Soit <span class="math inline">\(T &gt; 0\)</span> la période de <span class="math inline">\(f\)</span>, on a :
 <span class="math display">\[\forall x_0 \in \mathbb{R},\; \forall n \in \mathbb{N},\quad f(x_0) = f(x_0 + nT)\]</span></li>
 <li><p>D’autre part <span class="math inline">\(\lim\limits_{x \to +\infty} f(x) = l\)</span>, par déf :
-<span class="math display">\[\forall \varepsilon &gt; 0 ,\; \exists \color{red}{A} \in \mathbb{R},\; \forall x\in \mathbb{R},\quad \; \left( \; x &gt; A  \;\right) \implies \left(\; \mid f(x) - l \mid &lt; \varepsilon \; \right)\;\]</span></p></li>
+<span class="math display">\[\forall \varepsilon &gt; 0 ,\; \exists \color{red}{A} \in \mathbb{R},\; \forall x\in \mathbb{R},\quad \; \left( \; x &gt; A  \;\right) \implies \left(\; | f(x) - l | &lt; \varepsilon \; \right)\;\]</span></p></li>
 <li>En particulier,
 <span class="math display">\[\forall x_0 \in \mathbb{R},\quad x_0 + nT \underset{n\to + \infty} \to +\infty\]</span></li>
 <li><p>Donc,
@@ -164,29 +171,29 @@
 \begin{split}
 \exists N\in \mathbb{N}, \forall n\in \mathbb{N}, \quad n&gt; N 
 \implies &amp; x_0 +nT&gt;\color{red}{A} \\
-\implies &amp; \mid f(x_0 +nT) - l\mid &lt; \varepsilon \\
-\implies &amp; \mid f(x_0) - l\mid &lt; \varepsilon \\
+\implies &amp; | f(x_0 +nT) - l| &lt; \varepsilon \\
+\implies &amp; | f(x_0) - l| &lt; \varepsilon \\
 \end{split}
 \end{equation}\]</span></p></li>
 </ul>
 <p>Ceci étant vrai quelque soit <span class="math inline">\(x_0\)</span> fixé dans <span class="math inline">\(\mathbb{R}\)</span> et pour tout <span class="math inline">\(\varepsilon &gt;0\)</span>.</p>
 <ul>
 <li>D’après question 1. <span class="math inline">\(\forall x_0\in \mathbb{R}\)</span> :
-<span class="math display">\[(\forall  \varepsilon &gt; 0,\;\mid f(x_0) - l\mid &lt; \varepsilon) \iff f(x_0) - l = 0 \iff f(x_0) = l\]</span></li>
+<span class="math display">\[(\forall  \varepsilon &gt; 0,\;| f(x_0) - l| &lt; \varepsilon) \iff f(x_0) - l = 0 \iff f(x_0) = l\]</span></li>
 <li>En conclusion <span class="math inline">\(\forall x_0\in \mathbb{R}, \; f(x_0) = l\)</span></li>
 </ul>
 <!-- $$\begin{equation} -->
 <!-- \begin{split} -->
 <!-- \forall \varepsilon > 0,\; \forall x \in \mathbb{R},\; \exists A \in \mathbb{R},\; \exists N \in \mathbb{N},\; \forall n \in \mathbb{N},\quad n>N \implies & x + nT > A \\ -->
-<!-- \implies & \mid f(x+nT)-l\mid <\varepsilon \\ -->
-<!--  \mid f(x+nT)-l\mid <\varepsilon \quad\text{et}\quad f(x) \text{est périodique} \implies &  \mid f(x+nT)-l\mid = \mid f(x)-l\mid < \varepsilon -->
+<!-- \implies & | f(x+nT)-l| <\varepsilon \\ -->
+<!--  | f(x+nT)-l| <\varepsilon \quad\text{et}\quad f(x) \text{est périodique} \implies &  | f(x+nT)-l| = | f(x)-l| < \varepsilon -->
 <!-- \end{split} -->
 <!-- \end{equation}$$ -->
 <!-- - Ainsi, -->
 <!-- $$\begin{equation} -->
 <!-- \begin{split} -->
-<!-- &\forall \varepsilon > 0,\; \forall x\in \mathbb{R}\quad& \mid f(x)-l\mid &< \varepsilon \\ -->
-<!-- \iff & \forall x\in \mathbb{R},\; \forall \varepsilon > 0\quad& \mid f(x)-l\mid &< \varepsilon \\ -->
+<!-- &\forall \varepsilon > 0,\; \forall x\in \mathbb{R}\quad& | f(x)-l| &< \varepsilon \\ -->
+<!-- \iff & \forall x\in \mathbb{R},\; \forall \varepsilon > 0\quad& | f(x)-l| &< \varepsilon \\ -->
 <!-- \iff & \forall x\in \mathbb{R},\quad& f(x)-l &= 0 \\ -->
 <!-- \iff & \forall x\in \mathbb{R},\quad& f(x) &= l -->
 <!-- \end{split} -->
@@ -194,11 +201,11 @@
 <!-- $$\begin{equation} -->
 <!-- \begin{split} -->
 <!-- \forall \varepsilon > 0,\; \forall A \in \mathbb{R},\;\forall x \in \mathbb{R},\; \exists N \in \mathbb{N},\; \forall n \in \mathbb{N},\quad n>N \implies & x + nT > A \\ -->
-<!-- \implies & \mid f(x+nT)-l\mid <\varepsilon \\ -->
-<!--  \mid f(x+nT)-l\mid <\varepsilon \quad\text{et}\quad f(x) \text{est périodique}\implies &  \mid f(x+nT)-l\mid = \mid f(x)-l\mid < \varepsilon -->
+<!-- \implies & | f(x+nT)-l| <\varepsilon \\ -->
+<!--  | f(x+nT)-l| <\varepsilon \quad\text{et}\quad f(x) \text{est périodique}\implies &  | f(x+nT)-l| = | f(x)-l| < \varepsilon -->
 <!-- \end{split} -->
 <!-- \end{equation}$$ -->
-<!-- $$\forall \varepsilon > 0,\; \forall A \in \mathbb{R},\;\forall x \in \mathbb{R},\; \exists N \in \mathbb{N},\; \forall n \in \mathbb{N},\quad n>N \implies \mid f(x ) - l \mid < \varepsilon$$ -->
+<!-- $$\forall \varepsilon > 0,\; \forall A \in \mathbb{R},\;\forall x \in \mathbb{R},\; \exists N \in \mathbb{N},\; \forall n \in \mathbb{N},\quad n>N \implies | f(x ) - l | < \varepsilon$$ -->
 <hr />
 <hr />
 </div>

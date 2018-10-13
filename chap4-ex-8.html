@@ -121,13 +121,47 @@
             <section class="normal" id="section-">
 <div id="chap4-ex-8" class="section level2">
 <h2><span class="header-section-number">1.6</span> Chap4 Ex 8</h2>
+
+<div class="rmdexo">
+<ol style="list-style-type: decimal">
+<li>Montrer que si <span class="math inline">\(f\)</span> définie sur <span class="math inline">\(D \subset R\)</span> admet une limite en <span class="math inline">\(x_0\)</span>, alors la fonction <span class="math inline">\(| f|\)</span> admet une limite en <span class="math inline">\(x_0\)</span>. Laquelle ?</li>
+<li>Montrer que la réciproque est fausse.
+</div></li>
+</ol>
 <div id="guide-4" class="section level3 unnumbered">
 <h3>Guide</h3>
 </div>
 <div id="solution-4" class="section level3 unnumbered">
 <h3>Solution</h3>
+<div id="question-1" class="section level4 unnumbered">
+<h4>Question 1</h4>
+<ul>
+<li><span class="math inline">\(\lim\limits_{x \to x_0} f(x) = l\)</span>, par déf :
+<span class="math display">\[\forall \varepsilon &gt; 0，\;  \exists \eta &gt; 0，\; \forall x\in D\backslash\{x_0\},\quad  \; \left( \; 0&lt;| x-x_0 | &lt; \eta  \;\right) \implies \left(\; | f(x) - l | &lt; \varepsilon \; \right)\]</span></li>
+</ul>
+<p>Montrons que <span class="math inline">\(| f | \underset{x\to x_0}\to | l |\)</span> ?</p>
+<ul>
+<li>il suffit d’utiliser l’inégalité
+<span class="math display">\[\forall x\in \mathbb{R}\forall y \in \mathbb{R},\quad \left | | x | - | y |  \right | \le | x - y |\]</span></li>
+<li><p>or, on sait d’autre part que
+<span class="math display">\[\forall x\in \mathbb{R},\;\forall y \in \mathbb{R},\quad xy \le | xy | = | x | | y |\]</span></p></li>
+<li><p><span class="math inline">\(\forall \varepsilon &gt; 0\)</span> pour le même <span class="math inline">\(\eta_1\)</span>, on a</p></li>
+</ul>
+<p><span class="math display">\[\left( \; 0 &lt; | x - x_0 | &lt; \eta  \; \right) \implies \left(\; | f(x) | - | l | \le | f(x) - l | &lt; \varepsilon \; \right)\]</span></p>
+<p>d’ici le résultat.</p>
+</div>
+<div id="question-2" class="section level4 unnumbered">
+<h4>Question 2</h4>
+<p>Contre exemple :
+soit
+<span class="math display">\[f(x) = \left\{\begin{matrix}
+ a&amp; \text{Si } x \le 0 \\
+-a&amp; \text{Si } x &lt; 0 &amp;
+\end{matrix}\right.\text{ avec }\quad a&gt;0\]</span></p>
+<p>alors que <span class="math inline">\(f(x) \underset{x\to 0+}\to a\)</span> et <span class="math inline">\(f(x) \underset{x\to 0-}\to -a\)</span></p>
 
 
+</div>
 </div>
 </div>
 <!-- </div> -->

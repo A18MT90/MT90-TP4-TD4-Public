@@ -122,7 +122,7 @@
 <div id="chap4-ex-5" class="section level2">
 <h2><span class="header-section-number">1.4</span> Chap4 Ex 5</h2>
 
-<div class="rmdtip">
+<div class="rmdexo">
 <p>Soient</p>
 <ul>
 <li><span class="math inline">\(f\)</span> une fonction définie sur <span class="math inline">\(\mathbb{R}\backslash \{a\}\)</span> telle que <span class="math inline">\(\lim\limits_{x\to a} f (x) = l\)</span>,</li>
@@ -155,7 +155,7 @@
 <li><span class="math inline">\(f\)</span> une fonction numérique définie sur <span class="math inline">\(\Omega\)</span> sauf evetuellement en <span class="math inline">\(a\)</span>.</li>
 </ul>
 <p>On dit que <span class="math inline">\(f (x)\)</span> tend vers <span class="math inline">\(l\)</span> quand <span class="math inline">\(x\)</span> tend vers <span class="math inline">\(a\)</span> si:</p>
-<!-- $$\forall \varepsilon > 0，\; \exists \eta > 0，\; \forall x\in \Omega,\quad \left\{ \; \left( \; 0<\mid x-a \mid < \eta  \;\right) \implies \left(\; \mid f(x) - l \mid < \varepsilon \; \right)\; \right\}$$ -->
+<!-- $$\forall \varepsilon > 0，\; \exists \eta > 0，\; \forall x\in \Omega,\quad \left\{ \; \left( \; 0<| x-a | < \eta  \;\right) \implies \left(\; | f(x) - l | < \varepsilon \; \right)\; \right\}$$ -->
 <hr />
 </div>
 <div id="solution-2" class="section level3 unnumbered">
@@ -167,16 +167,16 @@
 <ul>
 <li><span class="math inline">\(l&gt;0\)</span> et <span class="math inline">\(\lim\limits_{x\to a} f(x) = l\)</span>, par déf :</li>
 </ul>
-<!-- $$\forall \varepsilon > 0，\;  \exists \eta > 0，\; \forall x\in \mathbb{R},\quad \left\{ \; \left( \; 0<\mid x-a \mid < \eta  \;\right) \implies \left(\; \mid f(x) - l \mid < \varepsilon \; \right)\; \right\}$$ -->
+<!-- $$\forall \varepsilon > 0，\;  \exists \eta > 0，\; \forall x\in \mathbb{R},\quad \left\{ \; \left( \; 0<| x-a | < \eta  \;\right) \implies \left(\; | f(x) - l | < \varepsilon \; \right)\; \right\}$$ -->
 <ul>
 <li>Pour que <span class="math inline">\(f(x)\)</span> soit positive au voisinage de <span class="math inline">\(a\)</span>, il suffit de choisir <span class="math inline">\(\varepsilon\)</span> tq <span class="math inline">\(l-\varepsilon &gt; 0\)</span></li>
 <li>Prenons, par exemble, <span class="math inline">\(\varepsilon = \frac{l}{2}\)</span></li>
 </ul>
-<p><span class="math display">\[\exists {\color{red} \eta_{\color{red}1}} \; \forall x\in \Omega,\quad \left\{ \; \left( \; 0&lt;\mid x-a \mid &lt; {\color{red} \eta_{\color{red}1}}  \;\right) \implies \left(\; \mid f(x) - l \mid &lt; \varepsilon \; \right)\; \right\}\]</span></p>
+<p><span class="math display">\[\exists {\color{red} \eta_{\color{red}1}} \; \forall x\in \Omega,\quad \left\{ \; \left( \; 0&lt;| x-a | &lt; {\color{red} \eta_{\color{red}1}}  \;\right) \implies \left(\; | f(x) - l | &lt; \varepsilon \; \right)\; \right\}\]</span></p>
 <p>avec</p>
 <p><span class="math display">\[\begin{equation}
 \begin{split}
-\mid f(x) - l \mid &lt; \varepsilon \iff &amp;  l - \frac{l}{2} &amp;&lt; f(x)        &amp;&lt; l + \frac{l}{2} \\
+| f(x) - l | &lt; \varepsilon \iff &amp;  l - \frac{l}{2} &amp;&lt; f(x)        &amp;&lt; l + \frac{l}{2} \\
 \iff                                  &amp;      \frac{l}{2} &amp;&lt; f(x)        &amp;&lt;  \frac{3l}{2}        \\
 \implies                              &amp;             f(x) &amp;&gt; \frac{l}{2} &amp;&gt; 0
 \end{split}
@@ -192,17 +192,17 @@
 <h5>Questions 1.b)</h5>
 <!-- - D'après question 1.a), on a défini un voisinage de $a$, noté $V$ tel que $\forall x \in \mathbb{R}\backslash \{a\}, \quad f(x) > \frac{l}{2}$ -->
 <!-- - Rappel de définition : Limite généralisé :  -->
-<!-- $$\forall A > 0, \exists \eta,\; \forall x\in \Omega\backslash\{a\}\quad  0 < \mid x-a \mid < \eta \implies f(x) > A$$ -->
+<!-- $$\forall A > 0, \exists \eta,\; \forall x\in \Omega\backslash\{a\}\quad  0 < | x-a | < \eta \implies f(x) > A$$ -->
 <!-- - On va essayer de définir un voisinage de $a$ tq, $f(x)g(x) > A$. On dispose un voisinage $V$ tq $f(x) > \frac{l}{2}$. Cela nous amêne à définir un voisinage de $a$, noté $V'$ tq $\forall x\in V'\backslash\{a\},\quad g(x)>\frac{A}{\frac{l}{2}}$. Ainsi, dans l'intersection de $V$ et $V'$ étant toujours un voisinage de $a$, on a $f(x)g(x) > A$. -->
 <!-- sachant qu'on a trouvé un voisinage de $a$ pour que $f(x) > \frac{l}{2}$, il suffit de trouver un voisinage  -->
 <ul>
 <li><span class="math inline">\(g(x) \underset{x\to a} \to +\infty\)</span>, par déf :</li>
 </ul>
-<p><span class="math display">\[\forall A &gt; 0, \exists {\color{red} \eta_{\color{red}2}},\; \forall x\in \mathbb{R},\quad  0 &lt; \mid x-a \mid &lt; {\color{red} \eta_{\color{red}2}} \implies g(x) &gt; \frac{2A}{l}\]</span></p>
+<p><span class="math display">\[\forall A &gt; 0, \exists {\color{red} \eta_{\color{red}2}},\; \forall x\in \mathbb{R},\quad  0 &lt; | x-a | &lt; {\color{red} \eta_{\color{red}2}} \implies g(x) &gt; \frac{2A}{l}\]</span></p>
 <ul>
 <li>pour <span class="math inline">\(\eta = {\color{red} \min}(\eta_1, \,\eta_2)\)</span>, on a :</li>
 </ul>
-<p><span class="math display">\[\forall A &gt; 0, \exists \eta,\; \forall x\in \mathbb{R}, \quad  0 &lt; \mid x-a \mid &lt; \eta \implies \left\{\begin{matrix}
+<p><span class="math display">\[\forall A &gt; 0, \exists \eta,\; \forall x\in \mathbb{R}, \quad  0 &lt; | x-a | &lt; \eta \implies \left\{\begin{matrix}
 f(x)&gt; \frac{l}{2} &gt; 0\\
 \text{et}\\
 g(x) &gt; \frac{2A}{l}
