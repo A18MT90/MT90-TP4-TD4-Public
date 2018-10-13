@@ -1,4 +1,4 @@
-.rmdcaution, .rmdimportant, .rmdnote, .rmdtip, .rmdwarning, .rmdexo{
+.rmdcaution, .rmdimportant, .rmdnote, .rmdtip, .rmdwarning, .rmdexo {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
   background: #f5f5f5 5px center/3em no-repeat;
@@ -61,6 +61,9 @@ h1, h2, h3, h4, h5, h6 {
 h1.title {
   font-weight: 700;
 }
+.smallcaps {
+  font-variant: small-caps;
+}
 .book .book-body .page-wrapper .page-inner section.normal strong {
-  font-weight: 500;
+  font-weight: 600;
 }
